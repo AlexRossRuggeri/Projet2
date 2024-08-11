@@ -121,7 +121,20 @@ a {
     margin-bottom: 5px;
 }
 
+/**Header**/
+header{
+    width: 1044px;
+    height: 79px;
+    
+}
 
+/**Footer**/
+
+footer {
+    background-color:#F2F2F2;
+    display: flex;
+    justify-content: space-around;
+}
 
 
 /* Le code ci-dessous correspond à la version responsive uniquement */

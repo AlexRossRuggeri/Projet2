@@ -19,6 +19,11 @@
     />
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/style2.css" />
+
+    <script
+      src="https://kit.fontawesome.com/ebe55ae510.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
 
   <body>
@@ -31,25 +36,57 @@
       </nav>
     </header>
 
+    <section class="container">
+      <div class="headline">
+        <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+        <p>En plein centre-ville ou en pleine nature</p>
+      </div>
+
+      <div class="searchbar">
+        <form method="get" action="">
+          <label></label>
+          <button id="geolocation-btn" title="Utiliser ma position">
+            <i class="fa-solid fa-location-dot"></i>
+          </button>
+          <input
+            type="search"
+            name="q"
+            value="Marseille, France"
+            placeholder="Recherchez votre hébergement"
+            class="search-imput"
+          />
+          <button id="search-btn">Rechercher</button>
+        </form>
+      </div>
+
+      <h2>Filtres</h2>
+    </section>
+
     <footer class="container">
       <nav>
         <ul class="footer-link">
-          <li>À propos</li>
-          <li>Fonctionnement du site</li>
-          <li>Conditions générales</li>
-          <li>Données et confidentialité</li>
+          <li>
+            <a href="#"> <em> À propos </em> </a>
+          </li>
+          <li><a href="#">Fonctionnement du site</a></li>
+          <li><a href="#">Conditions générales</a></li>
+          <li><a href="#">Données et confidentialité</a></li>
         </ul>
 
         <ul class="footer-link">
-          <li>Nos hébergements</li>
-          <li>Charte qualité</li>
-          <li>Proposez votre hôtel</li>
+          <li>
+            <a href="#"> <em> Nos hébergements </em> </a>
+          </li>
+          <li><a href="#">Charte qualité</a></li>
+          <li><a href="#">Proposez votre hôtel</a></li>
         </ul>
 
         <ul class="footer-link">
-          <li>Assistance</li>
-          <li>Centre d'aide</li>
-          <li>Nous contacter</li>
+          <li>
+            <a href="#"> <em> Assistance </em> </a>
+          </li>
+          <li><a href="#">Centre d'aide</a></li>
+          <li><a href="#">Nous contacter</a></li>
         </ul>
       </nav>
     </footer>

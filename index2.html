@@ -36,7 +36,7 @@
       </nav>
     </header>
 
-    <section class="container">
+    <section class="container" id="infogroup">
       <div class="headline">
         <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
         <p>En plein centre-ville ou en pleine nature</p>
@@ -44,22 +44,42 @@
 
       <div class="searchbar">
         <form method="get" action="">
-          <label></label>
-          <button id="geolocation-btn" title="Utiliser ma position">
+          <div class="search">
             <i class="fa-solid fa-location-dot"></i>
-          </button>
-          <input
-            type="search"
-            name="q"
-            value="Marseille, France"
-            placeholder="Recherchez votre hébergement"
-            class="search-imput"
-          />
-          <button id="search-btn">Rechercher</button>
+            <input
+              type="text"
+              name="q"
+              value="Marseille, France"
+              placeholder="Recherchez votre hébergement"
+              class="search-input"
+            />
+            <button class="search-btn">Rechercher</button>
+          </div>
         </form>
       </div>
 
-      <h2>Filtres</h2>
+      <div class="filter-bar">
+        <h2>Filtres</h2>
+        <button class="filter-button">
+          <i class="fa-solid fa-money-bill-wave"></i> Économique
+        </button>
+        <button class="filter-button">
+          <i class="fa-solid fa-person"></i> Familial
+        </button>
+        <button class="filter-button">
+          <i class="fa-solid fa-heart"></i> Romantique
+        </button>
+        <button class="filter-button">
+          <i class="fa-solid fa-fire"></i> Nos Pépites
+        </button>
+      </div>
+
+      <div class="info-bar">
+        <p>
+          <i class="fa-solid fa-info"></i> Plus de 500 logements sont
+          disponibles dans cette ville
+        </p>
+      </div>
     </section>
 
     <footer class="container">

@@ -56,7 +56,7 @@ header nav {
   text-decoration: none;
 }
 
-/*** Section Infogroup***/
+/*** Section Infogroup ***/
 
 #infogroup {
   display: flex;
@@ -80,10 +80,12 @@ p {
 
 /*** Search Bar ***/
 
-.search {
+.searchbar {
   width: max-content;
+}
+
+.search {
   display: flex;
-  align-items: center;
   background-color: #f2f2f2;
   border-radius: 15px;
 }
@@ -121,6 +123,11 @@ h2 {
   gap: 15px;
 }
 
+.filter-menu {
+  display: flex;
+  gap: 15px;
+}
+
 .filter-button {
   cursor: pointer;
   font-size: 17px;
@@ -133,8 +140,6 @@ h2 {
 
 .filter-button:hover {
   background-color: #deebff;
-  color: black;
-  border-color: #f2f2f2;
 }
 
 .filter-bar i {
@@ -143,12 +148,21 @@ h2 {
 
 /*** Info-Bar ***/
 
+.info-bar {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
 .info-bar i {
   color: #0065fc;
   border: 1px solid #d9d9d9;
   border-radius: 50%;
   width: 24px;
   height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /*** Footer ***/
@@ -217,21 +231,19 @@ footer ul li {
     padding: 0 0px;
   }
 
-  /** Media Queries Title **/
+  /** Media Queries Infogroup **/
 
-  .headline {
+  #infogroup {
     padding: 0 20px;
   }
+
+  /** Media Queries Title **/
 
   h1 {
     flex-wrap: wrap;
   }
 
   /** Media Queries Searchbar **/
-
-  .searchbar {
-    padding: 0 20px;
-  }
 
   .search-btn {
     padding: 16px;
@@ -249,8 +261,20 @@ footer ul li {
 
   /** Media Queries Filtre **/
 
+  .filter-bar h2 {
+    margin: 0 0 20px 0;
+  }
+
   .filter-bar {
-    flex-wrap: wrap;
+    display: unset;
+  }
+
+  .filter-menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 50px 50px;
+    column-gap: 10px;
+    row-gap: 20px;
   }
 
   /** Media Queries Footer **/

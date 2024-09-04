@@ -482,8 +482,8 @@ footer ul li {
   .hebergements-and-populaires {
     display: flex;
     flex-direction: column-reverse;
-    gap: 50px;
     padding: 0;
+    gap: 15px;
   }
 
   .hebergements-and-populaires section {
@@ -501,9 +501,27 @@ footer ul li {
 
   .hebergements {
     background-color: unset;
+    padding: 20px;
   }
 
   /** Media Queries Section Populaires **/
+
+  /** Media Queries Section Activités **/
+
+  .activites {
+    padding: unset;
+  }
+
+  .activites-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 0 30px 30px 30px;
+  }
+
+  .activites-cards img {
+    height: 141px;
+  }
 
   /** Media Queries Footer **/
 
@@ -541,5 +559,11 @@ footer ul li {
 
   .populaires-cards {
     flex-direction: row;
+  }
+
+  /** Media Queries Section Activités **/
+
+  .activites-cards img {
+    height: 200px;
   }
 }

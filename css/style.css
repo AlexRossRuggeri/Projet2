@@ -477,6 +477,12 @@ footer ul li {
     font-weight: 700;
   }
 
+  /** Media Queries Infobar **/
+
+  #infogroup {
+    margin-bottom: 35px;
+  }
+
   /** Media Queries Section Hébergements-Populaires **/
 
   .hebergements-and-populaires {
@@ -499,12 +505,24 @@ footer ul li {
     margin: 15px 0;
   }
 
-  .hebergements {
+  .hebergements-and-populaires .hebergements {
     background-color: unset;
     padding: 20px;
   }
 
   /** Media Queries Section Populaires **/
+
+  .hebergements-and-populaires .populaires {
+    padding: 30px 20px;
+  }
+
+  .populaires-title {
+    margin-bottom: 15px;
+  }
+
+  .populaires-cards {
+    gap: 15px;
+  }
 
   /** Media Queries Section Activités **/
 
@@ -557,8 +575,19 @@ footer ul li {
     gap: 50px;
   }
 
+  .populaires-title {
+    margin-bottom: 20px;
+  }
+
   .populaires-cards {
     flex-direction: row;
+    gap: 20px;
+  }
+
+  .populaires-cards a {
+    display: flex;
+    flex-basis: 0;
+    flex-grow: 1;
   }
 
   /** Media Queries Section Activités **/

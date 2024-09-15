@@ -256,8 +256,10 @@ p {
   border-radius: 20px 20px 0px 0px;
 }
 
-.more h3 {
+.more {
   margin: 0;
+  font-size: 18px;
+  font-weight: 700;
 }
 
 /*** Populaires ***/
